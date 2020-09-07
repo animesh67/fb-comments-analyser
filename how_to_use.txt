@@ -1,0 +1,8 @@
+HOW TO USE:
+1. open fb crawler folder
+2. right click and click on open in terminal
+3. in terminal run source start.sh
+4. visit 127.0.0.1:8000
+5. enjoy the website
+6. then run ./kill.sh in terminal (this will close all the servers)
+
