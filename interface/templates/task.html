@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="10">
+  <style>
+  p{
+  font-size= 20px;
+  }
+  body{
+  background-color: #423e3e;
+  }
+    .loader {
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #3498db;
+  position:absolute;
+  left:45%;
+  marin-top:30px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+  
+  @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  button{
+    font-size=20px;
+    border=none;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 45%;
+  }
+  button {
+    background: none;
+    color: #ccc;
+    border: 1px solid #338033;
+    font-size: 20px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+  }
+  
+  button:hover{
+  background: #338003;
+  cursor: pointer;
+  }
+
+  </style>
+</head>
+<body>
+  <title>Web Crawling</title>
+  <div class = "start">
+  <p style="text-align:center; color: #fff7f8; font-size:30px; margin-top: 100px" ><i>Crawling has started, if you want to stop the process and load partial crawled comments file, Click Stop </i></p><br>
+  
+  <div class="loader"></div>
+  <form method="POST">{% csrf_token %}
+      <button type="submit">Stop</button>
+        </form>
+    <p style="text-align:center; color: #fff7f8; font-size:20px; margin-top: 200px; text-transform: uppercase;" >We'll notify you when the crawling process will finish (This will take a few minutes)</p>
+  
+  
+  </div>
+</body>
+</html>

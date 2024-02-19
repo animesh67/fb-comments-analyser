@@ -1,0 +1,21 @@
+<html>
+{% load static %}
+<head>
+<title>Details page</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'interface/loginpage.css' %}">
+<body>
+    <div class="loginbox">
+    <img src="{%static 'interface/logimage.jpg' %}" class="loginimg">
+        <h1>Enter the details</h1><br>
+        <form method="POST">{% csrf_token %}
+            <input type="text" name="mail" placeholder="Enter FB email address" required>
+            <input type="password" name="pass" placeholder="Enter FB Password" required><br>
+            <input type="text" name="link" placeholder="Enter link of the post to be crawled" required>
+            <p text-align="center" color="black">OR</p>
+            <input type="text" name="link1" placeholder="Enter link of the page to be crawled">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</head>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	
+	body{
+	background-color: #423e3e;
+	}
+	
+	p{
+	margin-top: 100px;
+	text-align: center;
+	color: #fff7f8;
+	font-size:35px;
+	}
+	a{
+	color: #338033;
+	}
+	.link{
+	margin-top:50px;
+	}
+	p:hover{
+		color: #338033;
+	}
+	  button{
+    font-size=20px;
+    border=none;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    margin-left: 40%;
+    margin-right: 40%;
+    top:50%;
+
+  }
+  button {
+    background: none;
+    color: #ccc;
+    border: 1px solid #338033;
+    font-size: 20px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+  }
+  
+  button:hover{
+  background: #338003;
+  cursor: pointer;
+  }
+
+	
+	</style>
+
+<body>
+<div class="link">
+<form method="POST">{% csrf_token %}
+      <button type="submit">CLick Here To Download analysed file</button>
+<a  href="/"><p style="text-align: center; color: #96a4ff; font-size: 25px; margin-top: 50px" >Click Here to go to Home Page</p></a><br>
+
+
+</div>
+</body>
+
+
+
+</head>
+</html>
+
